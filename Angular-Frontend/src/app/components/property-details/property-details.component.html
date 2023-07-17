@@ -1,0 +1,122 @@
+<section class="max">
+  <div *ngIf="modalIsOpen" class="container">
+  
+  </div>
+<div id="first" class="mainDetails">
+      
+    <div class="slider glass">     
+      <div class="slider-text">
+          <h3 *ngIf="propertyDetails.county == 'Budapest'" class="text-center">{{propertyDetails.county}} {{propertyDetails.district}}, {{propertyDetails.street}} {{propertyDetails.streetNumber}}</h3>
+          <h3 *ngIf="propertyDetails.county != 'Budapest'"> {{propertyDetails.county}}, {{propertyDetails.cityName}}, {{propertyDetails.street}} {{propertyDetails.streetNumber}}</h3>
+      </div>
+
+      <div class="img-container">
+        <img src="https://coolmaterial.com/wp-content/uploads/2019/12/Niko-Architecture-House-in-the-Landscape.jpg" (click)="openModal()" alt="">
+      </div>
+           
+          <div class="slider-text-under">
+              <div>Price: $ {{propertyDetails.price}}</div>
+              <div class="under-text-one"></div>
+              <div>Size: {{propertyDetails.propertySize}}m²</div>
+              <div class="under-text-two"></div>
+              <div>Rooms: {{propertyDetails.numberOfRooms}}</div>
+          </div> 
+      </div>
+
+      <!-- <div>
+        <img src="" alt="">
+      </div> -->
+</div>
+
+<section id="second" class="table-container glass">
+ 
+      <table class="table one">
+        <tbody *ngIf="propertyDetails">
+            <tr>
+              <th scope="col">Description</th>
+              <td >{{propertyDetails.description}}</td>
+            </tr>
+            <tr>
+              <th scope="col">Advertisement Type</th>
+              <td *ngIf="propertyDetails.isForSale">Sale</td>
+              <td *ngIf="!propertyDetails.isForSale">Rent</td>
+            </tr>
+            <tr>
+              <th scope="col">Type</th>
+              <td >{{propertyDetails.type}}</td>
+            </tr>
+            <tr>
+              <th scope="col">Ground Size</th>
+              <td >{{propertyDetails.groundSize| number }} m²</td>
+            </tr>
+            <tr>
+              <th scope="col">Size</th>
+              <td >{{propertyDetails.propertySize | number}} m²</td>
+            </tr>
+            <tr>
+              <th scope="col">Rooms</th>
+              <td>{{propertyDetails.numberOfRooms | number}}</td>
+            </tr>
+            <tr>
+              <th scope="col">Half Rooms</th>
+              <td>{{propertyDetails.numberOfHalfRooms | number}}</td>
+            </tr>
+            <tr>
+              <th scope="col">Condition</th>
+              <td>{{propertyDetails.condition}}</td>
+            </tr>
+          </tbody>
+        </table>
+          
+        <table class="table two">
+          <tbody *ngIf="propertyDetails">
+            <tr>
+              <th scope="col">Heat</th>
+              <td>{{propertyDetails.heat}}</td>
+            </tr>           
+            <tr>
+              <th scope="col">Comfort</th>
+              <td>{{propertyDetails.comfort}}</td>
+            </tr>
+            <tr>
+              <th scope="col">Parking</th>
+              <td>{{propertyDetails.parking}}</td>
+            </tr>
+            <tr>
+              <th scope="col">Number of Floors</th>
+              <td>{{propertyDetails.numberOfFloors}}</td>
+            </tr>
+            <tr>
+              <th scope="col">Handicapped</th>
+              <td *ngIf="propertyDetails.isHandicapped">Yes</td>
+              <td *ngIf="!propertyDetails.isHandicapped">No</td>
+            </tr>
+            <tr>
+              <th scope="col">Air Conditioner</th>
+              <td *ngIf="propertyDetails.isAirConditionered">Yes</td>
+              <td *ngIf="!propertyDetails.isAirConditionered">No</td>
+            </tr>
+            <tr>
+              <th scope="col">Year of Build</th>
+              <td>{{propertyDetails.yearOfBuild | number}}</td>
+            </tr>
+            <tr class="date">
+              <th scope="col">Posted</th>
+                <td>
+                  {{propertyService.formatDate(propertyDetails.createdAt) | date}}
+                </td>
+              </tr>
+          </tbody>
+      </table>  
+    </section> 
+
+   <section id="third" class="map-container">
+      <app-map class="map glass"
+      [address]="getCurrentPropertyLocation()">
+    </app-map>
+  </section>
+  <div class="carousel">
+    <app-carousel-modal></app-carousel-modal>    
+  </div>
+</section>
+

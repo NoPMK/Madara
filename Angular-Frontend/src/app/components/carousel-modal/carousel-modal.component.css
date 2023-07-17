@@ -1,0 +1,82 @@
+.modal-container{
+    display: block;
+    width: 200%;
+    height: 100vh;
+    position: fixed;
+    opacity: 0.9;
+    background: #222;
+    z-index: 40000;
+    top:0;
+    left: 0;
+    overflow: hidden;
+    perspective: 1px;
+    animation-name: fadeIn_Container;
+    animation-duration: 0.3s;
+}
+
+
+.modal {
+    display: block;
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    z-index: 40001;
+    transform: translate(-50%, -50%);
+    max-width: 60%;
+    overflow: hidden;
+    min-height: 500px; 
+    animation-name: fadeIn_Modal;
+    animation-duration: 0.3s;
+    border-radius: 5px;
+  }
+
+  /* The Close Button */
+.close {
+    position: absolute;
+    top: 10%;
+    left: 39.5%; 
+    z-index: 999999999999999999999999;
+    color: #fff;
+    float: right;
+    font-size: 34px;
+    font-weight: bold;
+  }
+  
+  .close:hover{
+    scale: 1.05;
+    color: var(--grad-clr2);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close:focus {
+    scale: 0.95;
+  }
+
+
+  carousel-control-prev-icon{
+    color: var(--grad-clr1);
+  }
+
+
+  carousel-control-next-icon{
+    color: var(--grad-clr1);
+  }
+
+  @keyframes fadeIn_Modal {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn_Container {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 0.9;
+    }
+  }

@@ -1,0 +1,149 @@
+﻿@model IEnumerable<RealEstateApp.Models.Property>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Address)*@
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsForSale)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PropertySize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GroundSize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfRooms)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfHalfRooms)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Condition)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Heat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YearOfBuild)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfFloors)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comfort)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsHandicapped)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsAirConditionered)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Parking)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsDeleted)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsSold)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.Address.Id)*@
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsForSale)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PropertySize)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GroundSize)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfRooms)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfHalfRooms)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Condition)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Heat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YearOfBuild)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfFloors)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comfort)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsHandicapped)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsAirConditionered)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Parking)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsDeleted)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsSold)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

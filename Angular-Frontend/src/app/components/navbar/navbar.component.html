@@ -1,0 +1,33 @@
+<section>
+  
+  <div class="head">
+    
+    <div class="logo"><a href=""> <span class="nav-name">MaDaRa</span> Real Estate</a></div>
+    
+    <ul class="links">
+      <li><a i18n routerLink="home">Home</a></li>
+      <li><a id="aboutUs" i18n routerLink="aboutUs">About Us</a></li>
+      <li><a i18n routerLink="newProperty" *ngIf="user">New Property</a></li>
+      <li>
+        <a i18n class="logout" (click)="logout()" *ngIf="user">Leave</a>
+      </li>
+    </ul> 
+    <a i18n id="register" class="actionBtn" routerLink="register" *ngIf="!user">Register/Login</a>
+    <div *ngIf="!isOpen" class="toggle_btn" (click)="extendMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div *ngIf="isOpen" class="toggle_btn" (click)="extendMenu()">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+  </div>
+
+
+  <div class="dropdownMenu" [ngClass]="{'open': isOpen}">
+    <li><a i18n routerLink="home">Home</a></li>
+    <li><a i18n routerLink="aboutUs">About Us</a></li>
+    <li><a i18n routerLink="newProperty" *ngIf="user">New Property</a></li>
+    <li><a i18n class="actionBtn" routerLink="register" *ngIf="!user">Register/Login</a></li>
+    <li><a i18n id="logout" class="logout" (click)="logout()" *ngIf="user">Leave</a></li>
+ </div>
+
+</section>

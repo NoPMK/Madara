@@ -1,0 +1,28 @@
+<section>
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <h3 i18n>Email Confirmation Page</h3>
+      <div i18n id="checkBar" class="alert" >
+        Check your email for verification!
+      </div>
+	  <div i18n id="coolBar" class="alert" *ngIf="emailConfirmed" role="alert">
+        Email confirmed
+      </div>
+      <div i18n id="badBar" class="alert" *ngIf="!emailConfirmed" role="alert">
+		   Unable to confirm email
+      </div>
+    </div>
+    <div class="overlay-container" id="overlayCon">
+      <div class="overlay">
+        <div class="overlay-panel overlay-right">
+          <h1 i18n>Don't Worry!</h1>
+          <p i18n>It takes just a couple seconds to verify your email.</p>
+          <button i18n (click)="backToLogin()" [disabled]="!emailConfirmed">Sign In</button>
+        </div>
+      </div>
+	  <button id="overlayBtn" (click)="backToLogin()" [disabled]="!emailConfirmed"></button>
+    </div>
+  </div>
+</section>
+
+

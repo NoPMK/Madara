@@ -1,0 +1,107 @@
+#easyPara {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+span{
+    color: var(--grad-clr2);
+}
+
+.bg-img {
+    position: absolute;
+    width: 110%;
+    top: -40px;
+    left: -40px;
+    z-index: 1;
+}
+
+.bldg-3 {
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+    top: calc(50% + 170px);
+    right: calc(50% + 610px);
+}
+
+.bldg-2 {
+    position: absolute;
+    width: 15%;
+    top: calc(50% + 130px);
+    left: calc(50% + 500px);
+    z-index: 3;
+}
+
+.bldg-1 {
+    position: absolute;
+    width: 10%;
+    top: calc(50% + 70px);
+    left: calc(50% - 5px);
+    z-index: 4;
+}
+
+.fog {
+    position: absolute;
+    width: 110%;
+    bottom: calc(50% - 650px);
+    /* left: calc(50% -); 
+     */
+     left: -40px;
+    /* transform: translate(20%, 20%); */
+    z-index: 5;
+}
+
+.plane {
+    position: absolute;
+    width: 10%;
+    top: calc(50% - 260px);
+    left: calc(50% - 650px);
+    z-index: 6;
+}
+
+.parallax {
+    pointer-events: none;
+    transform: translate(50%, 50%);
+}
+
+.text {
+    position: absolute;
+    z-index: 3;
+    top: calc(50% - 50px);
+    left: calc(50% - 350px);  
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    pointer-events: auto;
+}
+
+::selection {
+    background-color: var(--grad-clr2);
+}
+
+.text h2{
+    font-weight: 200;
+    font-size: 9rem;
+}
+
+.text h1 {
+    font-weight: 800;
+    font-size: 7rem;
+    line-height: 1.5;
+}
+
+
+.vignette {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: radial-gradient(
+        ellipse at center,
+        rgba(0, 0, 0, 0) 65%,
+        rgba(0, 0, 0, 0.7));
+        pointer-events: none;
+}

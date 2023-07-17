@@ -1,0 +1,29 @@
+export interface CreatePropertyModel {
+  userId: string;
+  propertyId: number;
+  county: number;
+  cityName: string;
+  district: number;
+  street: string;
+  streetNumber: number;
+  photos: string;
+  isForSale: boolean;
+  type: string;
+  propertySize: number;
+  groundSize: number;
+  description: string;
+  numberOfRooms: number;
+  numberOfHalfRooms: number;
+  price: number;
+  condition: string;
+  heat: string;
+  yearOfBuild: number;
+  numberOfFloors: string;
+  comfort: string;
+  isHandicapped: boolean;
+  isAirConditioned: boolean;
+  parking: string;
+  isDeleted: boolean;
+  isSold: boolean;
+  createdAt: string;
+}

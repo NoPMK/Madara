@@ -1,0 +1,187 @@
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+section {
+    height: 91vh;
+    display: grid;
+    place-content: center;
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+}
+
+.container {
+    position: relative;
+    width: 850px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 25px 30px 55px #5557;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.form-container {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    padding: 0 40px;
+    transition: all 0.4s ease-in-out;
+}
+
+
+h1 {
+    color: var(--grad-clr1);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+
+span{
+    font-size: 12px;
+
+}
+
+
+button {
+    border-radius: 20px;
+    border: 1px solid var(--grad-clr1);
+    background: var(--grad-clr2);
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 9;
+}
+
+.overlay{
+    position: relative;
+    background: var(--linear-grad);
+    color: #FFF;
+    left: -150%;
+    height: 100%;
+    width: 250%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 40px;
+    text-align: center;
+    height: 100%;
+    width: 340px;
+    transition: transform 0.6s ease-in-out;
+}
+
+
+.overlay-right {
+    right: 0;
+    transform: translateX(0%);
+}
+
+.overlay-panel h1 {
+    color: #FFF;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 25px 0px 35px;
+}
+
+.overlay-panel button {
+    border: none;
+    background-color: transparent;
+}
+
+#coolBar {
+    display: inline-block;
+    height: 100px;
+}
+
+#overlayBtn {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 304px;
+    transform: translateX(-50%);
+    width: 143.67px; 
+    height: 40px; 
+    border: 1px solid #FFF;
+    background: transparent;
+    border-radius: 20px;
+}
+
+#badBar  {
+    position: relative;
+    margin: 8px 0px;
+    top: 20%;
+    opacity: 0.6;
+    width: 100%;
+    padding: 12px 15px;
+    background-color: red;
+    border: none;
+
+    outline: none;
+    text-align: center;
+}
+
+#coolBar  {
+    position: relative;
+    margin: 8px 0px;
+    top: 20%;
+    opacity: 0.7;
+    width: 100%;
+    padding: 12px 15px;
+    background-color: green;
+    color: black;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+#checkBar  {
+    position: relative;
+    margin: 8px 0px;
+    top: 15%;
+    opacity: 0.7;
+    width: 100%;
+    padding: 12px 15px;
+    background-color: var(--grad-clr2);
+    color: black;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+

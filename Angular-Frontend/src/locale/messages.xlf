@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="427930707742747059" datatype="html">
+        <source>Developers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7694057329503440986" datatype="html">
+        <source>EDUCATION: Air traffic controller</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1317048463411961889" datatype="html">
+        <source>LANGUAGES: english, german</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8051820672041239340" datatype="html">
+        <source>PREVIOUS EXPERIENCE:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Air traffic controller</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1275488121072110686" datatype="html">
+        <source>EDUCATION:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> ELTE Specialist for labour and social administration BSc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3351789989770398758" datatype="html">
+        <source>PREVIOUS EXPERIENCE:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Financial specialist</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1458337779697732801" datatype="html">
+        <source>EDUCATION: Communication and Media Major Bsc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6511610401331655909" datatype="html">
+        <source>LANGUAGE: english</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5782472582266987650" datatype="html">
+        <source>PREVIOUS EXPERIENCE:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Prosaic actor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2624764845376766942" datatype="html">
+        <source>Testers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6827798151352204293" datatype="html">
+        <source>EDUCATION: Graduation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1199844936963357611" datatype="html">
+        <source>PREVIOUS EXPERIENCE:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Manual labor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4465027376250304038" datatype="html">
+        <source>EDUCATION: German Studies, Dutch Studies Bsc</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9070145769691790754" datatype="html">
+        <source>LANGUAGES: english, dutch </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="185398059060965300" datatype="html">
+        <source>PREVIOUS EXPERIENCE:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Legal assistant</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7288574372330080228" datatype="html">
+        <source>EDUCATION: American studies BA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6986180042274615944" datatype="html">
+        <source>PREVIOUS EXPERIENCE:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Business Support Representative</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7552949577613891023" datatype="html">
+        <source>PREVIOUS EXPERIENCE:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Business Development Consultant,<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Real estate agent</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-us/about-us.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3043883733761078525" datatype="html">
+        <source>Email Confirmation Page</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/confirm-email/confirm-email.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1927447755564071802" datatype="html">
+        <source> Check your email for verification! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/confirm-email/confirm-email.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1128301158259520795" datatype="html">
+        <source> Email confirmed </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/confirm-email/confirm-email.component.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6488673591685365794" datatype="html">
+        <source> Unable to confirm email </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/confirm-email/confirm-email.component.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8080594528298842978" datatype="html">
+        <source>Don&apos;t Worry!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/confirm-email/confirm-email.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="370235540352628786" datatype="html">
+        <source>It takes just a couple seconds to verify your email.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/confirm-email/confirm-email.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="840692109692540367" datatype="html">
+        <source>Sign In</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/confirm-email/confirm-email.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">107,108</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">115,116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3026823408673792358" datatype="html">
+        <source>New Property</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">190</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4747476143771428810" datatype="html">
+        <source>Property size:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4594898691636082560" datatype="html">
+        <source> Property size is required to fill. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">26,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6585642381342434706" datatype="html">
+        <source>Property ground size:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7011742340470410761" datatype="html">
+        <source> Ground size is required to fill. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2308547229543030723" datatype="html">
+        <source>Number of rooms:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5832782327055614401" datatype="html">
+        <source> Number of rooms is required to fill. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">39,41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">43,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4836933928544889361" datatype="html">
+        <source>Number of half-rooms:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6796753945641936423" datatype="html">
+        <source>Property price:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="43889337853716875" datatype="html">
+        <source> Price is required to fill. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">63,65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="382571094086875848" datatype="html">
+        <source>Year of build:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6362038180167515562" datatype="html">
+        <source>Accessible</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4556990033532673555" datatype="html">
+        <source>AirConditioned</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1576265228050116516" datatype="html">
+        <source>For sale</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8109060271261473225" datatype="html">
+        <source>For rent</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6844065076511291901" datatype="html">
+        <source>Type of property:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1412513301920711997" datatype="html">
+        <source>Please choose...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">230</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="187187500641108332" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{property.displayName}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">159</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">199</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">231</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">96,97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8955409597866754989" datatype="html">
+        <source>&gt;please choose a type!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">203</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1794295219517542419" datatype="html">
+        <source>Condition:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="466492426610382126" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{condition.displayName}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6501548665298119274" datatype="html">
+        <source>Heat type:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8152089487843237911" datatype="html">
+        <source>Comfort categories:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2561356158804652930" datatype="html">
+        <source>Number of floors:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5999617210593060560" datatype="html">
+        <source>Parking categories:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3937890929369741745" datatype="html">
+        <source>Property description:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">172</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4284673829829273925" datatype="html">
+        <source> Description is required to fill. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">174,176</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">164,166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3885497195825665706" datatype="html">
+        <source>Next</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">183</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4129328578461459725" datatype="html">
+        <source>County:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">195</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7210815808495908154" datatype="html">
+        <source> City:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">214</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="527915309655802111" datatype="html">
+        <source>please choose a type!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">217</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">242</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">256</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7670833981119018210" datatype="html">
+        <source>District:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">228</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7642209613226774603" datatype="html">
+        <source> Street:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">239</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="755129556141965881" datatype="html">
+        <source>Street number: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">253</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3768927257183755959" datatype="html">
+        <source>Save</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">267</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8890553633144307762" datatype="html">
+        <source>Back</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-property/create-property.component.html</context>
+          <context context-type="linenumber">268</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="609845588652400885" datatype="html">
+        <source>Edit Property</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1221246599840649781" datatype="html">
+        <source>Property size(m²):</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1876563950524501498" datatype="html">
+        <source>Please choose a condition type...</source>
+        <source>Please choose a condition type...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="638047169153219633" datatype="html">
+        <source>Please choose a condition type!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="884319880793758374" datatype="html">
+        <source>please choose a comfort category...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7844952420238009995" datatype="html">
+        <source>Please choose a comfort category!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1089382817627205281" datatype="html">
+        <source>please choose a heat type...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1170033124743926707" datatype="html">
+        <source>Please choose a heat type!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3489994240646531209" datatype="html">
+        <source>please choose an expense...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4094987641965216031" datatype="html">
+        <source>Please choose parking category!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7022070615528435141" datatype="html">
+        <source>Delete</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-property/edit-property.component.html</context>
+          <context context-type="linenumber">175</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6578397717654172779" datatype="html">
+        <source>Page Not Found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/error-page/error-page.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2950516762204674600" datatype="html">
+        <source>Forgot Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6631334172623029500" datatype="html">
+        <source>Email:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2796760620406713589" datatype="html">
+        <source> Email is required. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">9,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6865009229971482891" datatype="html">
+        <source>Password:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7408685975415843367" datatype="html">
+        <source> Password is required. <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Password Must contain: min one special character, one number, lower and upper case!<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5881985581019827146" datatype="html">
+        <source>Password Again:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5928114498702476814" datatype="html">
+        <source>Get new password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="77685683276518709" datatype="html">
+        <source>Back to Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/forgot-password/forgot-password.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1884503612546140561" datatype="html">
+        <source>Detailed search</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3394206503815564138" datatype="html">
+        <source>County</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2314075913167237221" datatype="html">
+        <source>City</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5132058312086871798" datatype="html">
+        <source>District</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6527705248520354254" datatype="html">
+        <source>Advertisement type</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1616102757855967475" datatype="html">
+        <source>All</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2765811755265161003" datatype="html">
+        <source>Sale</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3504008095976461399" datatype="html">
+        <source>Rent</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5145554994538848267" datatype="html">
+        <source>Min. Property Size (m²)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3305819003583742682" datatype="html">
+        <source>Max. Property Size (m²)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="940200931931483472" datatype="html">
+        <source>Min. Number of Rooms</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5312661023182964676" datatype="html">
+        <source>Max. Number of Rooms</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5046727035167769019" datatype="html">
+        <source>Min. Price</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="982812737276857539" datatype="html">
+        <source>Max. Price</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4580988005648117665" datatype="html">
+        <source>Search</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2821179408673282599" datatype="html">
+        <source>Home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5736481176444461852" datatype="html">
+        <source>About Us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2273088133016853024" datatype="html">
+        <source>Leave</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="513425948349581031" datatype="html">
+        <source>Register/Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5520997578258110035" datatype="html">
+        <source>The list of the properties:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1499771923842749062" datatype="html">
+        <source>Photos <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/><x id="START_TAG_FILE_UPLOAD" ctype="x-file_upload" equiv-text="&lt;file-upload&gt;"/><x id="CLOSE_TAG_FILE_UPLOAD" ctype="x-file_upload" equiv-text="&lt;/file-upload&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8894377483833272091" datatype="html">
+        <source>Price</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8106836316632313489" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{propertyDetails.price | percent : &apos;4.3-5&apos;: &apos;en&apos; }}"/> $</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6304432362546770951" datatype="html">
+        <source>Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4651582170230478934" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{propertyDetails.county}}"/> <x id="INTERPOLATION_1" equiv-text="{{propertyDetails.district}}"/>, <x id="INTERPOLATION_2" equiv-text="{{propertyDetails.street}}"/> <x id="INTERPOLATION_3" equiv-text="{{propertyDetails.streetNumber}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1167046805189807301" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{propertyDetails.county}}"/>, <x id="INTERPOLATION_1" equiv-text="{{propertyDetails.cityName}}"/>, <x id="INTERPOLATION_2" equiv-text="{{propertyDetails.street}}"/> <x id="INTERPOLATION_3" equiv-text="{{propertyDetails.streetNumber}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4902817035128594900" datatype="html">
+        <source>Description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6323207288865642844" datatype="html">
+        <source>Advertisement Type</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2831823626179182042" datatype="html">
+        <source>Property Type</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3092620648636726534" datatype="html">
+        <source>Ground Size</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4970128100335520941" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{propertyDetails.groundSize| number }}"/> m²</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3927356826341819033" datatype="html">
+        <source>Number of Rooms</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="745260144358074844" datatype="html">
+        <source>Number of Half Rooms</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2838129566011107043" datatype="html">
+        <source>Condition</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5339408250528947190" datatype="html">
+        <source>Heat</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2411823957757702227" datatype="html">
+        <source>Comfort</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4549391621541125428" datatype="html">
+        <source>Parking</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2656028123241227221" datatype="html">
+        <source>Number of Floors</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8016970550725633109" datatype="html">
+        <source>Handicapped</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2807800733729323332" datatype="html">
+        <source>Yes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3542042671420335679" datatype="html">
+        <source>No</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3399341691889771209" datatype="html">
+        <source>Air Conditioner</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3207465496767121333" datatype="html">
+        <source>Year of Build</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5757167327375822154" datatype="html">
+        <source>Posted</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/property-details/property-details.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3755897084373251722" datatype="html">
+        <source>or use your email for registration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">62,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1466012768716286509" datatype="html">
+        <source>Sign Up</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">80,81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">120,121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5207635742003539443" datatype="html">
+        <source>Sign in</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">85,86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8515126179327803595" datatype="html">
+        <source>or use your account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">91,92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2012659005494284050" datatype="html">
+        <source>Forgot your password?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">106,107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1032145116648837291" datatype="html">
+        <source>Welcome Back!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">113,114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5361405102480361264" datatype="html">
+        <source>You can login with your personal info to continue browsing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">114,115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3170912340931814911" datatype="html">
+        <source>Hello There!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">118,119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="324431018044322770" datatype="html">
+        <source>Enter your personal details and start your journey with us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">119,120</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,180 @@
+<section class="max">
+
+  <form [formGroup]="editPropertyForm" id="all">
+    <section>
+    <h3 class="text-center mid-text">Edit Property</h3><hr>
+    
+
+    <div class="field">
+      <div class="formfield">
+        <label for="price" class="form-label" id="price">Property price($):</label>
+        <input type="number" class="form-control" id="price" formControlName="price">
+
+        <small i18n *ngIf="editPropertyForm.get('price')?.invalid && editPropertyForm.get('price')?.touched" class="text-danger">
+          Price is required to fill.
+      </small>
+  
+          <ng-container *ngIf="editPropertyForm.get('price')?.getError('missingField')">
+              <div *ngFor="let errorMessage of editPropertyForm.get('price')?.errors!['message']" class="text-danger d-block">{{ errorMessage }}</div>
+              </ng-container>
+      </div>
+    
+      <div class="formfield">
+        <label i18n for="propertySize" class="form-label" id="propertySize">Property size(m²):</label>
+        <input type="number" class="form-control" id="propertySize" formControlName="propertySize" >
+       
+        <small i18n *ngIf="editPropertyForm.get('propertySize')?.invalid && editPropertyForm.get('propertySize')?.touched" class="text-danger">
+          Property size is required to fill.
+      </small>
+  
+          <ng-container *ngIf="editPropertyForm.get('propertySize')?.getError('missingField')">
+              <div *ngFor="let errorMessage of editPropertyForm.get('propertySize')?.errors!['message']" class="text-danger d-block">{{ errorMessage }}</div>
+              </ng-container>
+      </div>
+    </div>
+
+    
+
+    <div class="field">
+          <div class="formfield">
+            <label i18n for="numberOfRooms" class="form-label" id="numberOfRooms">Number of rooms:</label>
+            <input type="number" class="form-control" id="numberOfRooms" formControlName="numberOfRooms">
+    
+            <small i18n *ngIf="editPropertyForm.get('numberOfRooms')?.invalid && editPropertyForm.get('numberOfRooms')?.touched" class="text-danger">
+              Number of rooms is required to fill.
+          </small>
+      
+              <ng-container *ngIf="editPropertyForm.get('numberOfRooms')?.getError('missingField')">
+                  <div *ngFor="let errorMessage of editPropertyForm.get('numberOfRooms')?.errors!['message']" class="text-danger d-block">{{ errorMessage }}</div>
+                  </ng-container>
+          </div>
+    
+          <div class="formfield">
+            <label i18n for="numberOfHalfRooms" class="form-label" id="numberOfHalfRooms">Number of half-rooms:</label>
+            <input type="number" class="form-control" id="numberOfHalfRooms" formControlName="numberOfHalfRooms">
+           
+            <ng-container *ngIf="editPropertyForm.get('numberOfHalfRooms')?.getError('missingField')">
+              <div *ngFor="let errorMessage of editPropertyForm.get('numberOfHalfRooms')?.errors!['message']" class="text-danger d-block">{{ errorMessage }}</div>
+              </ng-container>
+          </div>
+    </div>
+
+    <div class="field1">
+      <div class="mb-3 form-check ">
+        <div class="p-2">
+            <input type="radio" class="form-check-input" id="isForSale" formControlName="isForSale" name="isForSale" value="ForSale">
+            <label i18n class="form-check-label" for="isForSale">For sale</label>
+        </div>
+        <div class="p-2">
+            <input type="radio" class="form-check-input" id="isForSale" formControlName="isForSale" name="isForSale" value="ForRent">
+            <label i18n class="form-check-label" for="isForSale">For rent</label>
+        </div>
+          </div>
+
+          <div class="mb-3 form-check">
+            <div class="p-2">
+            <input type="checkbox" class="form-check-input" id="isAirConditionered" formControlName="isAirConditionered" name="isAirConditionered" value="isAirConditionered">
+            <label i18n class="form-check-label" for="isAirConditionered">AirConditioned</label>
+        </div>
+          </div>
+    </div>
+
+   
+          <div class="field3">
+            <label i18n for="condition">Condition:</label>
+            <select id="condition" formControlName="condition" class="form-control genre-select"
+              [ngClass]="{'is-invalid': editPropertyForm.get('condition')?.invalid && editPropertyForm.get('condition')?.touched || editPropertyForm.get('condition')?.errors?.['serverError']}">  
+              <option i18n disabled value=null>Please choose a condition type...</option>          
+              <option i18n *ngFor="let condition of conditionTypes" value="{{ condition.name }}"> {{condition.displayName}}</option>
+            </select>
+            
+            <div i18n *ngIf="editPropertyForm.get('condition')?.invalid && editPropertyForm.get('condition')?.touched && !editPropertyForm.get('condition')?.hasError('serverError')" class="text-danger">Please choose a condition type!</div>
+           
+            <ng-container *ngIf="editPropertyForm.get('condition')?.getError('missingField')">
+                <div *ngFor="let errorMessage of editPropertyForm.get('condition')?.errors!['message']" class="text-danger d-block">
+                  {{errorMessage}}
+                </div>
+              </ng-container>
+          </div>
+
+
+   
+     
+   
+          <div class="field3">
+            <label i18n for="comfort">Comfort categories:</label>
+            <select id="comfort" formControlName="comfort" class="form-control genre-select"
+              [ngClass]="{'is-invalid': editPropertyForm.get('comfort')?.invalid && editPropertyForm.get('comfort')?.touched || editPropertyForm.get('comfort')?.errors?.['serverError']}">  
+              <option i18n disabled value=null>please choose a comfort category...</option>          
+              <option i18n *ngFor="let comfort  of  comfortTypes" value="{{ comfort.name }}"> {{ comfort.displayName }}</option>
+            </select>
+            
+            <div i18n *ngIf="editPropertyForm.get('comfort')?.invalid && editPropertyForm.get('comfort')?.touched && !editPropertyForm.get('comfort')?.hasError('serverError')" class="text-danger">Please choose a comfort category!</div>
+           
+            <ng-container *ngIf="editPropertyForm.get('comfort')?.getError('missingField')">
+                <div *ngFor="let errorMessage of editPropertyForm.get('comfort')?.errors!['message']" class="text-danger d-block">
+                  {{errorMessage}}
+                </div>
+              </ng-container>
+          </div>
+
+
+    
+          <div class="field3">
+            <label i18n for="heat">Heat type:</label>
+            <select  id="heat" formControlName="heat" class="form-control genre-select"
+              [ngClass]="{'is-invalid': editPropertyForm.get('heat')?.invalid && editPropertyForm.get('heat')?.touched || editPropertyForm.get('heat')?.errors?.['serverError']}">  
+              <option i18n disabled value=null>please choose a heat type...</option>          
+              <option i18n *ngFor="let heat of heatTypes" value="{{ heat.name }}"> {{ heat.displayName }}</option>
+            </select>
+            
+            <div i18n *ngIf="editPropertyForm.get('heat')?.invalid && editPropertyForm.get('heat')?.touched && !editPropertyForm.get('heat')?.hasError('serverError')" class="text-danger">Please choose a heat type!</div>
+           
+            <ng-container *ngIf="editPropertyForm.get('heat')?.getError('missingField')">
+                <div *ngFor="let errorMessage of editPropertyForm.get('heat')?.errors!['message']" class="text-danger d-block">
+                  {{errorMessage}}
+                </div>
+              </ng-container>
+          </div>
+   
+
+   
+          <div class="field3">
+            <label i18n for="parking">Parking categories:</label>
+            <select id="parking" formControlName="parking" class="form-control genre-select"
+              [ngClass]="{'is-invalid': editPropertyForm.get('parking')?.invalid && editPropertyForm.get('parking')?.touched || editPropertyForm.get('parking')?.errors?.['serverError']}">  
+              <option i18n disabled value=null>please choose an expense...</option>          
+              <option i18n *ngFor="let parking of parkingTypes" value="{{ parking.name }}"> {{ parking.displayName }}</option>
+            </select>
+            
+            <div i18n *ngIf="editPropertyForm.get('parking')?.invalid && editPropertyForm.get('parking')?.touched && !editPropertyForm.get('parking')?.hasError('serverError')" class="text-danger">Please choose parking category!</div>
+           
+            <ng-container *ngIf="editPropertyForm.get('parking')?.getError('missingField')">
+                <div *ngFor="let errorMessage of editPropertyForm.get('parking')?.errors!['message']" class="text-danger d-block">
+                  {{errorMessage}}
+                </div>
+              </ng-container>
+          </div>
+ 
+
+    
+      <div class="field3">
+        <label i18n for="description" class="form-label" id="description">Property description:</label>
+        <textarea type="text" class="form-control" id="description" formControlName="description"></textarea>
+        <small i18n *ngIf="editPropertyForm.get('description')?.invalid && editPropertyForm.get('description')?.touched" class="text-danger">
+          Description is required to fill.
+      </small>
+  
+          <ng-container *ngIf="editPropertyForm.get('description')?.getError('missingField')">
+              <div *ngFor="let errorMessage of editPropertyForm.get('description')?.errors!['message']" class="text-danger d-block">{{ errorMessage }}</div>
+              </ng-container>
+      </div>
+
+
+      <button class="floated back" type="submit" (click)="backToList()">Back</button>
+      <button class="floated save" type="submit" (click)="save()" [disabled]="editPropertyForm.invalid">Save</button> 
+      <button class="floated delete" type="submit" *ngIf="isUserValidToDelete" (click)="deleteProperty()">Delete</button>
+
+    </section>
+</form>
+</section>

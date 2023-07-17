@@ -1,0 +1,127 @@
+<div class="search-button-div">
+  <button id="myBtn" class="search-button" (click)="openModal()">Detailed Search</button>
+</div>
+<!-- Trigger/Open The Modal -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <div class="glass">
+      <form [formGroup]="propertyForm" class="form-group">
+        <div class="section">
+        <div class="mb-3">
+          <label i18n for="county" class="col-form-label">County</label>
+          <select id="county" formControlName="county" class="form-control genre-select">
+            <option i18n *ngFor="let county of counties" value="{{county.name}}">{{county.displayName}}</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label i18n for="cityName" class="col-form-label" id="cityName">City</label>
+          <input type="text" class="form-control" id="cityName" formControlName="cityName">
+        </div>
+      </div>
+        <div class="section">
+        <div class="mb-3">
+          <label i18n for="district" class="col-form-label">District</label>
+          <select id="district" formControlName="district" class="form-control genre-select">
+            <option i18n *ngFor="let district of districts" value="{{district.name}}">{{district.displayName}}</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label i18n for="isForSale" class="col-form-label">Advertisement type</label>
+          <select id="isForSale" formControlName="isForSale" class="form-control genre-select">
+            <option i18n value="all">All</option>
+            <option i18n value="true">Sale</option>
+            <option i18n value="false">Rent</option>
+          </select>
+        </div>
+      </div>
+        <div class="section">
+          <div class="mb-3">
+            <label i18n for="minPropertySize" class="col-form-label" id="minPropertySize">Min. Property Size (m²)</label>
+            <input type="number" class="form-control" id="minPropertySize" formControlName="minPropertySize">
+          </div>
+          <div class="mb-3">
+            <label i18n for="maxPropertySize" class="col-form-label" id="maxPropertySize">Max. Property Size (m²)</label>
+            <input type="number" class="form-control" id="maxPropertySize" formControlName="maxPropertySize">
+          </div>
+          <div class="mb-3">
+            <label i18n for="minNumberOfRooms" class="col-form-label" id="minNumberOfRooms">Min. Number of Rooms</label>
+            <input  type="number" class="form-control" id="minNumberOfRooms" formControlName="minNumberOfRooms">
+          </div>
+          <div class="mb-3">
+            <label i18n for="maxNumberOfRooms" class="col-form-label" id="maxNumberOfRooms">Max. Number of Rooms</label>
+            <input type="number" class="form-control" id="maxNumberOfRooms" formControlName="maxNumberOfRooms">
+          </div>
+        </div>
+        <div class="section">
+          <div class="mb-3">
+            <label for="minPrice" class="col-form-label" id="minPrice">Min. Price ($)</label>
+            <input type="number" class="form-control" id="minPrice" formControlName="minPrice">
+          </div>
+          <div class="mb-3">
+            <label for="maxPrice" class="col-form-label" id="maxPrice">Max. Price ($)</label>
+            <input type="number" class="form-control" id="maxPrice" formControlName="maxPrice">
+          </div>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <button id="inModalSearch" type="submit" (click)="search()" (click)="closeModal()">Search</button>
+      </div>
+      </div>
+  </div>
+
+</div>
+
+
+<section class="found-list" *ngIf="propertyList">
+  <app-search class="search"(searchTextChanged)="onSearchTextInput($event)"></app-search>
+    <table class="table" id="all">
+      <thead>
+        <tr class="titles">
+          <th scope="col">County</th>
+          <th scope="col">City/District</th>
+          <th scope="col">Address</th>
+          <th scope="col">Type</th>
+          <th scope="col">Size</th>
+          <th scope="col">Rooms</th>
+          <th scope="col">Price</th>
+          <!-- <th scope="col">Edit</th> -->
+        </tr>
+      </thead>
+      <tbody *ngIf="propertyList">
+        <tr class="tableRow" *ngFor="let property of propertyList | paginate: { itemsPerPage: itemsPerPage, currentPage: p }" (click)="goToDetails(property.id)">
+          <ng-container *ngIf="property.county.toLowerCase().includes(searchText)">
+            <td class="county">{{property.county}}</td>
+            <td *ngIf="property.county == 'Budapest'">{{property.district}}</td>
+            <td *ngIf="property.county != 'Budapest'">{{property.cityName}}</td>
+            <td class="street">{{property.street}} {{property.streetNumber}}</td>
+            <td id="isForSale" *ngIf="property.isForSale">Sale</td>
+            <td id="isForSale" *ngIf="!property.isForSale">Rent</td>
+            <td class="size">{{property.propertySize}} m²</td>
+            <td class="rooms">{{property.numberOfRooms}}</td>
+            <td>{{property.price | currency}}</td>
+            <td><button class="edit-button" *ngIf="property.isUserValidToEdit" (click)="goToEdit(property.id)">Edit</button></td>
+          </ng-container>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="mt-8 py-5 d-flex justify-content-center align-items-center">
+      <pagination-controls class="page" (pageChange)="p = $event"></pagination-controls>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+

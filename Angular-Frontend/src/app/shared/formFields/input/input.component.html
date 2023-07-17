@@ -1,0 +1,15 @@
+<form  *ngIf="form" [formGroup]="form">
+    <div>
+        <label [for]="controlName" class="form-label" *ngIf="label">{{label}}:</label>
+        <input [type]="type" class="form-control" [id]="controlName" [formControlName]="controlName" />
+    
+        <div *ngIf="form.get(controlName)?.invalid && form.get(controlName)?.touched" class="text-danger">
+            {{inputErrorMessage}}
+        </div>
+    
+        <ng-container *ngIf="form.get(controlName)?.getError(errorProperty)">
+            <small *ngFor="let errorMessage of form.get(controlName)?.errors!['message']" class="text-danger d-block">{{ errorMessage }}</small>
+            </ng-container>
+    </div>
+    
+  </form>

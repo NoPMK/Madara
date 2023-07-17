@@ -1,0 +1,326 @@
+/* The Modal (background) */
+
+.form{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(7,1fr);
+}
+
+.search-button{
+  position: relative;
+  top: 90px;
+  border-radius: 20px;
+  border: 1px solid var(--grad-clr1);
+  background: #fff;
+  color: var(--grad-clr2);
+  font-size: clamp(9px, 1vw, 12px);
+  font-weight: bold;
+  padding: 12px 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  left: 43%;
+  width: max(150px, 13%);
+  z-index: 1;
+}
+
+.search-button:hover{
+  scale: 1.05;
+  color: #fff;
+  background-color:var(--grad-clr2);
+  transition: 0.3s;
+}
+
+.search-button:active{
+  scale: 0.95;
+}
+
+#inModalSearch{
+  place-content: center;
+  border-radius: 20px;
+  border: 1px solid var(--grad-clr1);
+  background: #fff;
+  color: var(--grad-clr2);
+  font-size: clamp(9px, 1vw, 12px);
+  font-weight: bold;
+  padding: 12px 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  margin: auto;
+  width: max(150px, 13%);
+}
+
+#inModalSearch:hover{
+  scale: 1.05;
+  color: #fff;
+  background-color:var(--grad-clr2);
+  transition: 0.3s;
+}
+
+#inModalSearch :active{
+  scale: 0.95;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /*Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 300;
+  height: 32rem;
+  bottom: 20%;
+}
+
+.modal-footer{
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  place-content: center;
+}
+
+/* The Close Button */
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--grad-clr2);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.section{
+  display: flex;
+  justify-content: center;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 5px;
+  column-gap: 5px;
+  text-align: center;
+}
+.mb-3{
+  width: 50%;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  padding: 0.4rem;
+  margin-inline: auto;
+}
+
+.edit-button {
+  border-radius: 20px;
+  border: 1px solid var(--grad-clr1);
+  background: #fff;
+  color: var(--grad-clr2);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.edit-button:hover {
+  scale: 1.05;
+  color: #fff;
+  background-color:var(--grad-clr2);
+  transition: 0.3s;
+}
+
+.edit-button:active{
+  scale: 0.95;
+}
+
+.mid-text {
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  top: 14px;
+  height: 40px;
+  width: 100%;
+  color: #fff;
+  border-top: 2px solid var(--grad-clr1);
+  border-right: 2px solid var(--grad-clr1);
+  border-left: 2px solid var(--grad-clr1);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+.found-list {
+    position: relative;
+    top: 40px;
+}
+
+.titles {
+  color: #fff;
+  font-size: clamp(14px, 18px, 100%);
+  font-weight: 500;
+}
+
+.search{
+  position: relative;
+  top: 60px;
+}
+
+.table {
+  position: relative;
+  top: 60px;
+  width: max(450px, 55%);
+  margin-inline: auto;
+}
+
+.edit-button{
+  border-radius: 13px;
+  padding: 6px;
+  font-size: 12px;
+}
+
+.tableRow {
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 10px solid transparent;
+  width: 40%; /* Could be more or less, depending on screen size */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(10px);
+  border-collapse: collapse;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  color: azure;
+  font-weight: bold;
+}
+
+.tableRow:hover{
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.2)
+  );
+  color: var(--grad-clr2);
+}
+
+@media (max-width: 767px) {
+  .section{
+    display: flex;
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /*Enable scroll if needed */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 1% auto; /* 15% from the top and centered */
+    padding: 1%;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 300;
+    height: 80%;
+    top: 10%;
+  }
+  .search-button{
+    position: relative;
+    display: flex;
+    top: 90px;
+    border-radius: 20px;
+    border: 1px solid var(--grad-clr1);
+    background: #fff;
+    color: var(--grad-clr2);
+    font-size: clamp(9px, 1vw, 12px);
+    font-weight: bold;
+    padding: 12px 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    left: 32%;
+    /* width: max(150px, 13%);
+    z-index: 1;*/
+  }
+  .titles{
+    display: none;
+  }
+  .county{
+    display: none;
+  }
+  .street{
+    display: none;
+  }
+  .rooms{
+    display: none;
+  }
+}
+@media (max-width: 376px){
+  .titles{
+    display: none;
+  }
+  .county{
+    display: none;
+  }
+  .street{
+    display: none;
+  }
+  .rooms{
+    display: none;
+  }
+  .size{
+    display: none;
+  }
+}

@@ -1,0 +1,18 @@
+
+<div class="form-group" [formGroup]="form" *ngIf="form">
+    <label [for]="controlName" *ngIf="label">{{label}}:</label>
+    <select [title]="form.get(controlName)?.invalid && form.get(controlName)?.touched ? 'valami' : '' " [id]="controlName" [formControlName]="controlName" class="form-control genre-select" 
+    [ngClass]="{'is-invalid': form.get(controlName)?.invalid && form.get(controlName)?.touched || form.get(controlName)?.errors?.['serverError']}">
+
+      <!-- <option disabled value=null>please choose {{controlName}}...</option>           -->
+      <option *ngFor = "let option  of  options" value = "{{ option.name }}">{{option.displayName}}</option>
+    </select>
+    
+    <!-- <div *ngIf = "form.get('controlName')?.invalid && form.get('controlName')?.touched && !form.get('controlName')?.hasError('serverError')" class="text-danger">>{{inputErrorMessage}}</div> -->
+   
+    <ng-container *ngIf = "form.get('controlName')?.getError('errorProperty')">
+        <div *ngFor="let errorMessage of form.get('controlName')?.errors!['message']" class="text-danger d-block">
+          {{errorMessage}}
+        </div>
+      </ng-container>
+  </div>

@@ -1,0 +1,330 @@
+<section class="max">
+
+<section id="all-container">
+
+  <form [formGroup]="createPropertyForm" class="form">
+
+    <section *ngIf="!onNext">
+
+  <h3 class="text-center mid-text">New Property</h3><hr>
+
+  <div class="input_container">
+
+    <div class="mb-3">
+      <label for="propertySize" class="form-label" id="propertySize">Property size (m²):</label>
+      <input type="number" class="form-control pretty" id="propertySize" formControlName="propertySize" >
+    <small *ngIf="createPropertyForm.get('propertySize')?.invalid && createPropertyForm.get('propertySize')?.touched" class="text-danger">
+      Required with a valid number.
+    </small>
+
+    <ng-container *ngIf="createPropertyForm.get('propertySize')?.getError('missingField')">
+      <div *ngFor="let errorMessage of createPropertyForm.get('propertySize')?.errors!['message']" class="text-danger d-block">{{ errorMessage }}</div>
+    </ng-container>
+  </div>
+
+  <div class="mb-3">
+    <label for="groundSize" class="form-label" id="groundSize">Property ground size (m²):</label>
+    <input type="number" class="form-control pretty" id="groundSize" formControlName="groundSize">
+
+    <small *ngIf="createPropertyForm.get('groundSize')?.invalid && createPropertyForm.get('groundSize')?.touched" class="text-danger">
+      Required with a valid number.
+    </small>
+  </div>
+
+  <ng-container *ngIf="createPropertyForm.get('groundSize')?.getError('missingField')">
+    <div *ngFor="let errorMessage of createPropertyForm.get('groundSize')?.errors!['message']" class="text-danger d-block">{{ errorMessage }}</div>
+  </ng-container>
+
+</div>
+
+<div class="input_container">
+
+  <div class="mb-3">
+    <label for="numberOfRooms" class="form-label" id="numberOfRooms">Number of rooms:</label>
+    <input type="number" class="form-control pretty" id="numberOfRooms" formControlName="numberOfRooms">
+
+    <small *ngIf="createPropertyForm.get('numberOfRooms')?.invalid && createPropertyForm.get('numberOfRooms')?.touched" class="text-danger">
+      Required with a valid number.
+    </small>
+
+    <ng-container *ngIf="createPropertyForm.get('numberOfRooms')?.getError('missingField')">
+      <div *ngFor="let errorMessage of createPropertyForm.get('numberOfRooms')?.errors!['message']" class="text-danger d-block">{{ errorMessage }}</div>
+    </ng-container>
+  </div>
+
+  <div class="mb-3">
+    <label for="numberOfHalfRooms" class="form-label" id="numberOfHalfRooms">Number of half-rooms:</label>
+    <input type="number" class="form-control pretty" id="numberOfHalfRooms" formControlName="numberOfHalfRooms">
+
+    <ng-container *ngIf="createPropertyForm.get('numberOfHalfRooms')?.getError('missingField')">
+      <div *ngFor="let errorMessage of createPropertyForm.get('numberOfHalfRooms')?.errors!['message']" class="text-danger d-block">{{ errorMessage }}</div>
+    </ng-container>
+  </div>
+
+</div>
+
+<div class="input_container">
+
+  <div class="mb-3">
+    <label for="price" class="form-label" id="price">Property price ($):</label>
+    <input type="number" class="form-control pretty" id="price" formControlName="price">
+
+    <small *ngIf="createPropertyForm.get('price')?.invalid && createPropertyForm.get('price')?.touched" class="text-danger">
+      Required with a valid number.
+    </small>
+
+    <ng-container *ngIf="createPropertyForm.get('price')?.getError('missingField')">
+      <div *ngFor="let errorMessage of createPropertyForm.get('price')?.errors!['message']" class="text-danger d-block">{{ errorMessage }}</div>
+    </ng-container>
+  </div>
+
+  <div class="mb-3">
+    <label for="yearOfBuild" class="form-label" id="yearOfBuild">Year of build:</label>
+    <input type="number" class="form-control pretty" id="yearOfBuild" formControlName="yearOfBuild">
+
+    <small *ngIf="createPropertyForm.get('yearOfBuild')?.invalid && createPropertyForm.get('yearOfBuild')?.touched" class="text-danger">
+      Required. (between 0-2028)
+    </small>
+
+    <ng-container *ngIf="createPropertyForm.get('yearOfBuild')?.getError('missingField')">
+      <div *ngFor="let errorMessage of createPropertyForm.get('yearOfBuild')?.errors!['message']" class="text-danger d-block">{{ errorMessage }}</div>
+    </ng-container>
+  </div>
+
+</div>
+
+<div class="checkboxes">
+
+  <div class="mb-3 form-check">
+    <div>
+      <input type="checkbox" class="form-check-input " id="isHandicapped" formControlName="isHandicapped" name="isHandicapped" [(ngModel)]="isCheckedHandicapped">
+      <label class="form-check-label" for="isHandicapped">Accessible</label>
+    </div>
+  </div>
+
+  <div class="mb-3 form-check">
+    <div>
+      <input type="checkbox" class="form-check-input" id="isAirConditioned" formControlName="isAirConditioned" name="isAirConditioned" [(ngModel)]="isCheckedAirConditionered">
+      <label class="form-check-label" for="isAirConditioned">AirConditioned</label>
+    </div>
+  </div>
+
+
+
+  <small *ngIf="createPropertyForm.get('isForSale')?.invalid && createPropertyForm.get('isForSale')?.untouched" class="text-danger">
+    *required
+  </small>
+  <div class="mb-3 form-check">  <!--  TODO: Validation -->
+    <div>
+      <input type="radio" class="form-check-input" id="isForSale" formControlName="isForSale" name="isForSale" value="true">
+      <label class="form-check-label" for="isForSale">For sale</label>
+    </div>
+
+    <div>
+      <input type="radio" class="form-check-input" id="isForSale" formControlName="isForSale" name="isForSale" value="false">
+      <label class="form-check-label" for="isForSale">For rent</label>
+    </div>
+  </div>
+</div>
+
+<div class="input_container">
+
+  <div class="form-group enums">
+
+    <label for="type">Type of property:</label>
+    <select id="type" formControlName="type" class="form-control genre-select pretty"
+    >
+    <option disabled value=null>Required, please choose...</option>
+    <option *ngFor="let property  of  propertyTypes" value="{{ property.name }}">{{property.displayName}}</option>
+  </select>
+
+  <!-- <div *ngIf="createPropertyForm.get('type')?.invalid && createPropertyForm.get('type')?.touched && !createPropertyForm.get('type')?.hasError('serverError')" class="text-danger">>please choose a type!</div> -->
+
+  <ng-container *ngIf="createPropertyForm.get('type')?.getError('missingField')">
+    <div *ngFor="let errorMessage of createPropertyForm.get('type')?.errors!['message']" class="text-danger d-block">
+      {{errorMessage}}
+    </div>
+  </ng-container>
+
+</div>
+
+<div class="form-group enums">
+
+  <label for="condition">Condition:</label>
+  <select id="condition" formControlName="condition" class="form-control genre-select pretty">
+    <option disabled value=null>Required, please choose...</option>
+    <option *ngFor="let condition of conditionTypes" value="{{ condition.name }}"> {{condition.displayName}}</option>
+  </select>
+
+</div>
+
+<div class="form-group enums">
+
+  <label for="heat">Heat type:</label>
+  <select id="heat" formControlName="heat" class="form-control genre-select pretty">
+    <option disabled value=null>Required, please choose...</option>
+    <option *ngFor="let heat of heatTypes" value="{{ heat.name }}"> {{ heat.displayName }}</option>
+  </select>
+
+</div>
+
+</div>
+
+<div class="input_container">
+
+  <div class="form-group enums">
+    <label for="comfort">Comfort categories:</label>
+    <select id="comfort" formControlName="comfort" class="form-control genre-select pretty">
+      <option disabled value=null>Required, please choose...</option>
+      <option *ngFor="let comfort  of  comfortTypes" value="{{ comfort.name }}"> {{ comfort.displayName }}</option>
+    </select>
+  </div>
+
+
+  <div class="form-group enums">
+    <label for="numberOfFloors">Number of floors:</label>
+    <select id="numberOfFloors" formControlName="numberOfFloors" class="form-control genre-select pretty">
+      <option disabled value=null>Required, please choose...</option>
+      <option *ngFor="let floor  of floorTypes" value="{{ floor.name }}">{{ floor.displayName }}</option>
+    </select>
+  </div>
+
+
+  <div class="form-group enums">
+    <label for="parking">Parking categories:</label>
+    <select id="parking" formControlName="parking" class="form-control genre-select pretty">
+      <option disabled value=null>Required, please choose...</option>
+      <option *ngFor="let parking of parkingTypes" value="{{ parking.name }}"> {{ parking.displayName }}</option>
+    </select>
+  </div>
+
+</div>
+
+
+<div class="mb-3 desc" id="descriptions">
+  <!-- <label for="description" class="form-label" id="description">Property description:</label> -->
+  <textarea type="text" class="form-control pretty" id="description" formControlName="description" rows="3" placeholder="Property description is required..."></textarea>
+  <div class="text-center">
+  <small *ngIf="createPropertyForm.get('description')?.invalid && createPropertyForm.get('description')?.touched" class="text-danger">
+    The features of the property and its surroundings are important to the viewers. (between 10 and 10.000 characters)
+  </small>
+  </div>
+
+  <ng-container *ngIf="createPropertyForm.get('description')?.getError('missingField')">
+    <div *ngFor="let errorMessage of createPropertyForm.get('description')?.errors!['message']" class="text-danger d-block">{{ errorMessage }}</div>
+        </ng-container>
+</div>
+      <div>
+        <button class="next" type="submit" (click)="next()">Next</button>
+      </div>
+    </section>
+
+  <section class="secondPage" *ngIf="onNext">
+
+    <h3 class="text-center secondPageText mid-text">New Property</h3><hr>
+
+    <div class="input_container">
+
+      <div>
+        <div class="form-group">
+          <label for="county">County:</label>
+          <select id="county" formControlName="county" class="form-control genre-select pretty"
+          [ngClass]="{'is-invalid': createPropertyForm.get('county')?.invalid && createPropertyForm.get('county')?.touched || createPropertyForm.get('county')?.errors?.['serverError']}">
+          <option disabled value=null>Please choose...</option>
+        <option *ngFor="let county of counties" value="{{ county.name }}">{{county.displayName}}</option>
+      </select>
+    </div>
+
+
+    <div *ngIf="createPropertyForm.get('county')?.invalid && createPropertyForm.get('county')?.touched && !createPropertyForm.get('county')?.hasError('serverError')" class="text-danger">Required. Please choose...</div>
+
+    <ng-container *ngIf="createPropertyForm.get('county')?.getError('missingField')">
+      <div *ngFor="let errorMessage of createPropertyForm.get('county')?.errors!['message']" class="text-danger d-block">
+        {{errorMessage}}
+      </div>
+    </ng-container>
+  </div>
+
+  </div>
+
+
+  <div class="section">
+
+  <div class="mb-3">
+    <label for="cityName" class="form-label" id="cityName"> City:</label>
+    <input type="text" class="form-control pretty" id="cityName" formControlName="cityName">
+
+    <div *ngIf="createPropertyForm.get('cityName')?.invalid && createPropertyForm.get('cityName')?.touched && !createPropertyForm.get('cityName')?.hasError('serverError')" class="text-danger">Required.</div>
+
+    <ng-container *ngIf="createPropertyForm.get('cityName')?.getError('missingField')">
+      <div *ngFor="let errorMessage of createPropertyForm.get('cityName')?.errors!['message']" class="text-danger d-block">
+        {{errorMessage}}
+      </div>
+    </ng-container>
+  </div>
+
+</div>
+
+
+  <div class="section">
+    <div class="form-group" *ngIf="createPropertyForm.get('cityName')?.value === 'Budapest'">
+      <label for="district">District:</label>
+      <select id="district" formControlName="district" class="form-control genre-select pretty">
+        <option disabled value=null>Please choose...</option>
+        <option *ngFor="let district of districts" value="{{ district.name }}">{{district.displayName}}</option>
+      </select>
+    </div>
+  </div>
+
+
+      <div class="section2">
+
+        <div class="mb-3">
+          <label for="street" class="form-label" id="street"> Street:</label>
+          <input type="text" class="form-control pretty" id="street" formControlName="street">
+
+          <div *ngIf="createPropertyForm.get('street')?.invalid && createPropertyForm.get('street')?.touched && !createPropertyForm.get('street')?.hasError('serverError')" class="text-danger">Required.</div>
+
+          <ng-container *ngIf="createPropertyForm.get('street')?.getError('missingField')">
+            <div *ngFor="let errorMessage of createPropertyForm.get('street')?.errors!['message']" class="text-danger d-block">
+              {{errorMessage}}
+            </div>
+          </ng-container>
+
+        </div>
+
+        <div class="mb-3">
+          <label for="streetNumber" class="form-label" id="streetNumber">Street number: </label>
+          <input type="number" class="form-control pretty" id="streetNumber" formControlName="streetNumber" >
+
+          <div *ngIf="createPropertyForm.get('streetNumber')?.invalid && createPropertyForm.get('streetNumber')?.touched && !createPropertyForm.get('streetNumber')?.hasError('serverError')" class="text-danger">Required with a valid number.</div>
+
+          <ng-container *ngIf="createPropertyForm.get('streetNumber')?.getError('missingField')">
+            <div *ngFor="let errorMessage of createPropertyForm.get('streetNumber')?.errors!['message']" class="text-danger d-block">
+              {{errorMessage}}
+            </div>
+          </ng-container>
+        </div>
+
+      </div>
+
+     <div class="secondPageButtons">
+       <button class="floated back" type="submit" (click)="back()">Back</button>
+       <button class="floated save" type="submit" (click)="save()" [disabled]="createPropertyForm.invalid">Save</button>
+    </div>
+    <div class="text-center">
+      <small *ngIf="createPropertyForm.invalid" class="text-danger">
+        Please fill all required fields.
+      </small>
+    </div>
+
+    </section>
+
+  </form>
+  <div>
+    <!-- <file-upload>
+    </file-upload> -->
+</div>
+</section>
+
+</section>

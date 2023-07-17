@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+section {
+    position: relative;
+    top: 40px;
+    width: 100%;
+    left: 1.6%;
+}
+
+h1 {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+span{
+  color: var(--grad-clr2);
+  font-weight: 600;
+}
+
+.intro-text {
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  left: 24%;
+  height: 50px;
+  width: 50%;
+  bottom: -50px;
+  margin-bottom: 5px;
+  border-bottom: 2px solid var(--grad-clr1);
+  border-right: 2px solid var(--grad-clr1);
+  border-left: 2px solid var(--grad-clr1);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.portfolio-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+  justify-content: space-between;
+  left: auto;
+  margin-bottom: 9.375rem; 
+  right: auto;
+  position: relative;
+  top: 6.25rem;
+}
+
+.portfolio-items .card {
+  position: relative;
+  width: 85%;
+  height: 350px;
+  margin: 20px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+.petya{
+  position: relative;
+  left: 31%;
+  width: 37%;
+}
+
+.portfolio-items .card img {
+  position: absolute;
+  bottom: 20;
+  left: 47%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 240px;
+  visibility: hidden;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.portfolio-items .card:hover img {
+  left: 77.5%;
+  height: 347px;
+  visibility: visible;
+}
+
+.petya .card:hover img {
+  left: 79.5%;
+}
+
+.portfolio-items .card .item {
+  position: relative;
+  text-align: center;
+  width: 50%;
+  left: -2%;
+  padding: 20px 20px 20px 40px;
+  opacity: 1;
+  transition: 0.5s;
+  visibility: visible;
+}
+
+.portfolio-items .card:hover .item {
+  right: 10;
+  transform: translateX(-57%);
+}
+
+.portfolio-items .card .item h2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: azure;
+  font-size: 2.2em;
+  line-height: 1em;
+  top: 140px;
+  transition: 0.5s;
+  font-family: "Poppins", sans-serif;
+}
+
+.portfolio-items .card:hover .item h2 {
+  transform: translateY(-400%);
+  transition: 0.5s;
+  color: var(--grad-clr2);
+}
+
+.portfolio-items .card .item p {
+  display: inline;
+  color: azure;
+  opacity: 0;
+  transition: 0.5s;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-items .card:hover .item p {
+  opacity: 1;
+  transform: translateY(120%);
+  transition: 0.5s;
+  display: block;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1024px) {
+  
+  .portfolio-items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+  }
+
+  .portfolio-items .card:hover img {
+    left: 82.5%;
+    border-radius: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .portfolio-items .card:hover img {
+    left: 76.5%;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  h1{
+    font-size: 20px;
+  }
+
+  .portfolio-items .card:hover img {
+    left: 77%;
+    height: 120px;
+    width: 100px;
+    border-radius: 10px;
+  }
+
+  .portfolio-items .card .item {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .portfolio-items .card:hover .item h2{
+   left: 39%;
+   font-size: 22px;
+   top: 50%;
+  }
+
+  .portfolio-items .card:hover .item p{
+    display: block;
+    justify-content: center;
+    font-size: 12px;
+    margin-left: 70%;
+    margin-top: 25%;
+    width: 100%;
+  }
+
+  span{
+    display: inline-block;
+  }
+
+  br {
+    display: none;
+  }
+
+  p > br {
+    display: block;
+  }
+
+  .extra {
+    margin-top: 10%;
+    line-height: 1;
+  }
+}
+
+

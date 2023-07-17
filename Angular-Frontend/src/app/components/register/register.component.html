@@ -1,0 +1,131 @@
+
+<!-- <section class="">
+  <h3 class="">Register</h3><hr>
+<form [formGroup]="registerForm" class="" (ngSubmit)="onSubmit()">
+
+
+  <app-input 
+  [form]="registerForm"
+  [label]="'Username:'"
+  [controlName]="'userName'"
+  [errorProperty]="'missingField'"
+  [inputErrorMessage]="'User name is missing!'"
+  [type]="'text'"
+  ></app-input>
+
+  <app-input 
+  [form]="registerForm"
+  [label]="'Email:'"
+  [controlName]="'email'"
+  [errorProperty]="'missingField'"
+  [inputErrorMessage]="'Email is missing!'"
+  [type]="'text'"
+  ></app-input>
+
+  <app-input 
+  [form]="registerForm"
+  [label]="'Email Again:'"
+  [controlName]="'emailAgain'"
+  [errorProperty]="'missingField'"
+  [inputErrorMessage]="'Email is missing!'"
+  [type]="'text'"
+  ></app-input>
+
+  <app-input 
+  [form]="registerForm"
+  [label]="'Password:'"
+  [controlName]="'password'"
+  [errorProperty]="'missingField'"
+  [inputErrorMessage]="'Password is missing!'"
+  [type]="'password'"
+  ></app-input>
+
+  <button type="submit" class="" [disabled]="registerForm.invalid" >Register</button>
+</form>
+
+<app-login></app-login>
+<div class="">
+  <a routerLink="/login">Sing in</a>
+</div>
+</section> -->
+
+<section>
+<div class="container" id="container" [ngClass]="{'right-panel-active' : switch}">
+  <div class="form-container sign-up-container">
+      <form [formGroup]="registerForm">
+          <h1>Create Account</h1>
+          <div class="social-container">
+              <a (click)="facebookLogin()" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a (click)="facebookLogin()" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a (click)="facebookLogin()" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span i18n >or use your email for registration</span>
+          <div class="infield">
+              <input i18n id="registerName" type="text" class="form-control" [ngClass]="{'is-invalid': registerSubmitted && registerForm.get('userName')?.invalid}" placeholder="Username" formControlName="userName"/>
+              <label></label> 
+                       
+            </div>
+          <div class="infield">
+              <input i18n id="registerEmail" type="email" class="form-control" [ngClass]="{'is-invalid': registerSubmitted && registerForm.get('email')?.invalid}" placeholder="Email" name="email" formControlName="email"/>
+              <label></label>             
+            </div>           
+          <div class="infield">
+            <input i18n id="registerEmailAgain" type="email" class="form-control" [ngClass]="{'is-invalid': registerSubmitted && registerForm.get('emailAgain')?.invalid}" placeholder="Email Again" name="emailAgain" formControlName="emailAgain"/>
+            <label></label>
+             
+        </div>       
+          <div class="infield">
+              <input i18n id="registerPassword" type="password" class="form-control" [ngClass]="{'is-invalid': registerSubmitted && registerForm.get('password')?.invalid}" placeholder="Password" formControlName="password"/>
+              <label></label>
+            
+          </div>
+          <button i18n id="registerButton" (click)="register()">Sign Up</button>
+      </form>
+  </div>
+  <div class="form-container sign-in-container">
+      <form [formGroup]="loginForm">
+          <h1 i18n>Sign in</h1>
+          <div class="social-container">
+              <a (click)="facebookLogin()" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a (click)="facebookLogin()" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a (click)="facebookLogin()" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span i18n>or use your account</span>
+          <div class="infield">
+              <input i18n id="userName" type="text" class="form-control" [ngClass]="{'is-invalid': loginSubmitted && loginForm.get('userName')?.invalid}" placeholder="Username" name="userName" formControlName="userName"/>
+              <label></label>
+              <div  class="tooltip" *ngIf="loginForm.get('userName')?.getError('missingField')">
+                <span i18n class="tooltiptext" *ngFor="let errorMessage of loginForm.get('userName')?.errors!['message']" class="text-danger d-block">{{ errorMessage }}</span>
+                
+            </div>
+          </div>
+          <div class="infield">
+              <input i18n id="password" type="password" class="form-control" [ngClass]="{'is-invalid': loginSubmitted && loginForm.get('password')?.invalid}" placeholder="Password" name="password" formControlName="password"/>
+              <label></label>
+              <!-- <div class="tooltip" *ngIf="loginForm.get('password')?.getError('missingField')">
+                <span class="tooltiptext" *ngFor="let errorMessage of loginForm.get('password')?.errors!['message']" class="text-danger d-block">{{ errorMessage }}</span>
+                </div> -->
+                
+          </div>
+          <a i18n routerLink="forgotPassword" class="forgot">Forgot your password?</a>
+          <button i18n id="login" class="login" (click)="login()">Sign In</button>
+      </form>
+  </div>
+  <div class="overlay-container" id="overlayCon">
+      <div class="overlay">
+          <div class="overlay-panel overlay-left">
+              <h1 i18n>Welcome Back!</h1>
+              <p i18n>You can login with your personal info to continue browsing</p>
+              <button i18n (click)="panelClick()">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+              <h1 i18n>Hello There!</h1>
+              <p i18n>Enter your personal details and start your journey with us</p>
+              <button i18n id="signUp" (click)="panelClick()">Sign Up</button>
+          </div>
+      </div>
+      <button i18n (click)="panelClick()" id="overlayBtn" [ngClass]="{'btnScaled' : btnScale}"></button>
+  </div>
+</div>
+</section>
+<toastr-notification id="toast"></toastr-notification>  
